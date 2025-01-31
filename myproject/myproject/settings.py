@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ckeditor',  # For WYSIWYG editor
+    'modeltranslation',  # For multilingual support
+    # Custom apps
+    'faq',
 ]
 
 MIDDLEWARE = [
@@ -98,6 +102,21 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+        'height': 300,
+        'width': '100%',
+    },
+}
+LANGUAGES = [
+    ('en', 'English'),
+    ('hi', 'Hindi'),
+    ('bn', 'Bengali'),
+]
+
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'
 
 
 # Internationalization
