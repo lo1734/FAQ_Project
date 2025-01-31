@@ -1,6 +1,7 @@
-from modeltranslation.translator import register, TranslationOptions
+from modeltranslation.translator import translator, TranslationOptions
 from .models import FAQ
 
-@register(FAQ)
 class FAQTranslationOptions(TranslationOptions):
-    fields = ('question',)
+    fields = ('question', 'answer')  # Add the fields that should be translatable
+
+translator.register(FAQ, FAQTranslationOptions)
