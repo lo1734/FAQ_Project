@@ -15,8 +15,8 @@ Project Setup
 To set up this project locally, follow the steps below.
 
 Clone the repository:
-          git clone https://github.com/your-username/faq-management-system.git
-          cd faq-management-system
+          git clone https://github.com/lo1734/FAQ_Project.git
+          cd faq
 
 Create and activate a virtual environment:
 
